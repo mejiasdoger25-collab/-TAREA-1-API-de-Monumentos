@@ -1,0 +1,38 @@
+### POST Crear monumento
+POST http://localhost:8080/monument
+Content-Type: application/json
+
+{
+  "countryCode": "234gh",
+  "countryName": "Spain",
+  "cityName": "Seville",
+  "latitude": 123.123,
+  "length": 567.567,
+  "monumentName": "Giralda",
+  "monumentDescription": "a simple tower",
+  "imageURL": "https://mymodernmet.com/wp/wp-content/uploads/2020/08/Giralda-1.jpg"
+}
+
+### GET obtener todos los productos
+GET http://localhost:8080/monument
+
+### GET obtener producto id 1
+GET http://localhost:8080/monument/1
+
+### PUT Modificar producto
+PUT http://localhost:8080/monument/1
+Content-Type: application/json
+
+{
+  "countryCode": "934gh",
+  "countryName": "France",
+  "cityName": "Paris",
+  "latitude": 678.678,
+  "length": 234.234,
+  "monumentName": "Eiffel",
+  "monumentDescription": "another tower",
+  "imageURL": "https://imgs.search.brave.com/KBO3esWpvE9mlfIww_4hax6OUbnRkeSiNzz7VBSWHaY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNjM1/ODMyNTYyL2VzL2Zv/dG8vbGEtdG9ycmUt/ZWlmZmVsLWVzLXVu/YS1kZS1sYXMtYXRy/YWNjaW9uZXMtdHVy/JUMzJUFEc3RpY2Fz/LW0lQzMlQTFzLWNv/bm9jaWRhcy5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9WVJC/TktVRFZ5V1cyM3Js/dV9hQV91RUNsbVlC/c1J3TzJPQXgtT016/UkxfND0"
+}
+
+### DELETE borrar producto id 1
+DELETE http://localhost:8080/monument/1
